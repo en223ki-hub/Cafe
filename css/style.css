@@ -380,7 +380,7 @@ audio:hover {
   display: flex;
   width: 300%;
   height: 100%;
-  animation: slideShow 10s infinite;
+  animation: slideShow 20s infinite;
 }
 
 .event {
@@ -420,7 +420,7 @@ audio:hover {
   position: absolute;
   width: 100%;
   height: 100%;
-  animation: textSlide 10s infinite;
+  animation: textSlide 20s infinite;
 }
 
 .text-slide {
@@ -473,10 +473,16 @@ audio:hover {
   align-items: center;
 }
 
-.karta h2, .nyhetsbrev h3 {
+.karta h2 {
     color: #5c3b1e;
     margin-bottom: 10px;
     text-align: start;
+}
+
+.nyhetsbrev h3 {
+    color: #5c3b1e;
+    margin-bottom: 10px;
+    text-align: center;
 }
 
 /* === FORMULÄR Feedback === */
