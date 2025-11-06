@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rapport för uppgift 3 i Webbteknik 1</title>
+    <style>
+        html {
+            font-size: 16px
+        }
+
+        body {
+            background-color: #FFF;
+            color: #000;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            max-width: 80ch;
+            margin-left: 2ch;
+        }
+
+        header,
+        section {
+            border-bottom: 1px solid #999;
+        }
+
+        img {
+            max-width: 100%;
+        }
+
+        p {
+            text-align: justify;
+        }
+
+        h2 {
+            margin-bottom: 0.2em;
+        }
+
+        h3 {
+            margin-top: 0.2em;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Rapport för uppgift 3</h1>
+    </header>
+    <main>
+        <section>
+            <h2>1. Syfte och målgrupp</h2>
+            <p>I uppgiften skapades en webbplats för ...
+                I uppgiften skapades en webbplats för Café Kaffe & Karma, ett lokalt och hållbart café i centrala Uppsala som serverar ekologiskt kaffe, te, smörgåsar och hembakade veganska bakverk. Caféet fungerar också som en mötesplats med livemusik, konstutställningar och workshops med fokus på miljö och gemenskap.
+            </p>
+            <p>Syfte med webbplatsen är ...
+                <!-- Fyll på med kort beskrivning som anger syftet med webbplatsen. -->
+                <!-- Alltså syfte och mål med webbplatsen för företaget eller organisationen. -->
+            </p>
+            <ul>
+                <li>att marknadsföra caféet och locka fler kunder</li>
+                <li>att informera om öppettider, meny och evenemang</li>
+                <li>att ge en känsla av atmosfären och gemenskapen på plats</li>
+                <li>att förenkla kontakt med caféet för frågor, bokningar och beställningar</li>
+            </ul>
+            <p>Målgruppen består av ...
+                <!-- Fyll på med beskrivning som identifierar målgruppen. -->
+                <!-- Ange också eventuell uppdelning i delgrupper. -->
+            </p>
+            <ul>
+                <li>Primär målgrupp: 20–60+ åringar i Uppsala som uppskattar lokala, miljömedvetna verksamheter och en trivsam plats för fika, studier eller arbete.</li>
+                <li>Sekundär målgrupp: Turister, kulturintresserade och lokala musiker/konstnärer som vill delta i caféets evenemang.</li>
+            </ul>
+            <h3>Användarnas behov</h3>
+            <!-- Skriv korta punkter som beskriver vilka behov webbplatsen ska uppfylla. -->
+            <!-- Altså resultatet av målgruppsanalysen. Beskrivning av hur du gjort analysen ska inte finnas med. -->
+            <ul>
+                <li>Se aktuella öppettider och kontaktuppgifter.</li>
+                <li>Hitta caféets meny och priser.</li>
+                <li>Se kommande evenemang och aktiviteter.</li>
+                <li>Lära känna caféets koncept och hållbarhetsarbete.</li>
+                <li>Hitta vägbeskrivning via karta.</li>
+                <li>Kunna lämna feedback eller beställa fika via formulär.</li>
+            </ul>
+        </section>
+        <section>
+            <h2>2. Kravspecifikation</h2>
+            <!-- Kravspecifikationen ska vara utformad enligt Garretts modell på det sätt som visas i föreläsningar och laboration. -->
+            <h3>Innehåll</h3>
+            <!-- Skriv korta konkreta och mätbara krav som beskriver VAD innehållet ska bestå av. -->
+            <ul>
+                <li>Startsida med välkomsttext, bild och kort presentation av caféet.</li>
+                <li>Undersida “Meny” med drycker och bakverk och möjlighet till beställning i förväg.</li>
+                <li>Undersida “Evenemang” med information om livemusik och workshops.</li>
+                <li>Undersida “Om oss” med bakgrund, värderingar och hållbarhetsprofil.</li>
+                <li>Undersida “Kontakt” med adress, karta och kontaktformulär.</li>
+                <li>Bilder som visar stämningen och interiören.</li>
+                <li>(VG) Picture-element används för att visa olika storlekar på bild på första sidan beroende på skärmstorlek.</li>
+            </ul>
+            <h3>Funktion</h3>
+            <!-- Skriv korta konkreta och mätbara krav som beskriver VAD användaren ska kunna göra. -->
+            <ul>
+                <li>Global navigering (länkar till alla huvudsidor i toppmeny).</li>
+                <li>Lokal navigering inom undersidorna förutom för “Evenemang”-sidan</li>
+                <li>Kontaktformulär med flera input-element (t.ex. namn, e-post, radioknappar för typ av fråga, textfält).</li>
+                <li>Feedback -formulär med möjlighet till att påverka evenemang och cafeets utbud.</li>
+                <li>Responsiv design med grid/flexbox.</li>
+                <li>CSS i separat fil.</li>
+                <li>Länk till rapport i sidfoten på startsidan.</li>
+                <li>(VG) Picture-element på startsidan.</li>
+                <li>(VG) Genomfört användartest enligt “Tänka högt”-metoden med 3 personer.</li>
+            </ul>
+        </section>
+        <section>
+            <h2>3. Beskrivning av arbetet</h2>
+            <!-- Beskriv hur du arbetat med uppgiften. -->
+            <!-- För VG är det viktigt att du beskriver hur du använt Garretts modell och tar med referenser med sidnummer till boken, för att styrka det du tar upp i din text. Se mer info i rutan om referenser på uppgiftens webbsida. -->
+            <p>I utvecklingen av webbplatsen för Café Kaffe & Karma har jag arbetat enligt Garretts fem plan („strategy, scope, structure, skeleton, surface“) vilka tydligt visar hur webbplatsens syfte har omsatts i struktur och design. Garrett framhåller att designprocessen bör delas upp i dessa fem nivåer för att skapa en genomtänkt webbplats som både är användbar och estetiskt tilltalande, om du inte skapar en positiv erfarenhet för dina användare kommer de inte använda produkten/siten (Garrett, 2011, s. 17). Jag har även tittat på andra hemsidor, som t.ex. Guntherska Hovkonditori i Uppsala (2025), Café Padda (2025) (därifrån kom förslaget om att ha evenemang på caféet/hemsidan) och även större caféer som Espressohouse (2025) för att få en känsla och inspiration kring struktur, målgrupp, omfattning och innehåll. Då Garrett påpekar att varje ytterligare funktion, eller steg i processen, skapar ytterligare en möjlighet för upplevelsen att bli otillräcklig (Garrett, 2011, s. 10-13) är det viktigt att inte använda för många funktioner för att få en så lättnavigerad sida innehållandes det mest essentiella för att inte skrämma iväg kunderna.</p>
+            <p><b>Strategy (strategiplan)</b><br>
+                Garrett (2011, s. 36-37) betonar vikten av att tydligt formulera både produktens mål och användarnas behov, där dessa tillsammans utgör “the strategy plane”, grunden för alla beslut i designprocessen. Han framhåller särskilt att dessa mål bör vara explicit formulerade, eftersom en klar förståelse för vad organisationen vill uppnå och vad användarna förväntar sig gör det möjligt att fatta mer precisa och välgrundade beslut.
+                I enlighet med Garretts första plan definierades därför webbplatsens syfte och målgrupp i ett tidigt skede. Genom målgruppsanalys identifierades främst 20–60+ åringar med intresse för hållbarhet och gemenskap, samt sekundära målgrupper som turister och konstnärer. Jag dokumenterade även användarnas huvudsakliga behov,  såsom att kunna se menyn, kolla öppettider och hitta till caféet, vilket utgjorde ett centralt strategiunderlag för det fortsatta designarbetet.</p>
+                <p>Garrett beskriver flera sätt att förstå användarnas behov, exempelvis genom user testing (2011, s. 42) , research (2011, s. 46) och skapandet av personas (2011, s. 49 . Eftersom mina föräldrar tidigare har drivit ett café och jag själv har en stark personlig koppling till café­miljön, hade jag redan en intuitiv förståelse för den typ av kunder som lockas till en plats som Kaffe & Karma. Utifrån denna erfarenhet, kombinerad med Garretts användarcentrerade synsätt, formulerades en målgrupp och ett strategiunderlag som lade grunden för webbplatsens fortsatta utformning.
+            </p>
+            <p><b>Scope (omfångsplan)</b><br>
+                Som Garrett (2011, s. 66-68)  beskriver är det avgörande att skapa samspel mellan dem som utvecklar produkten och dem som ska använda den. Kommunikation mellan dessa parter möjliggör att funktioner och krav grundas i verkliga behov snarare än antaganden. Han poängterar också att det inte alltid är de funktioner användarna efterfrågar som faktiskt skapar mest värde,  ibland behöver man göra avsiktliga avvägningar för att lösa de underliggande problemen snarare än symptomen.</p>
+                <p>Med tanke på uppgiftens omfång och den begränsade tiden valde jag dock att själv stå för utvecklingen av webbplatsen, vilket innebar att jag fick axla både användar- och utvecklarperspektivet. I linje med Garretts andra plan – the scope plane – gick jag därefter vidare med att konkretisera innehålls- och funktionskraven. Jag tog fram en tydlig kravspecifikation, uppdelad i Innehåll (startsida, meny, evenemang, om oss, kontakt) och Funktion (global och lokal navigering, responsiv design, kontaktformulär etc.)</p>
+                <p>Detta arbete gav en klar struktur för vad webbplatsen skulle innehålla och hur den skulle fungera, vilket skapade ett stabilt arbetsunderlag för den fortsatta designprocessen.
+            </p>
+            <p><b>Structure (strukturplan)</b><br>
+            Enligt Garrett (2011, s. 88) handlar strukturplanet om att utforma informationsarkitekturen och navigationssystemet på ett sätt som stödjer användarens förståelse och minskar risken för misstag. Människor har alltid behövt strukturera information så att andra kan förstå och använda den. På webben handlar detta om att skapa organisations- och navigationsstrukturer som gör det möjligt för användare att effektivt hitta, förstå och interagera med innehållet.</p>
+            <p>Garrett (2011, s. 89-90) förklarar vidare att en tydlig informationsarkitektur kan utvecklas både top-down, utifrån produktmål och användarbehov, och bottom-up, baserat på analys av innehåll och funktionella krav. Oavsett angreppssätt är målet att skapa en struktur som speglar både verksamhetens syften och användarnas behov.</p>
+            <p>I mitt projekt formades webbplatsens struktur i enlighet med Garretts tredje plan,  the structure plane. Jag skapade en global huvudnavigering med länkar till Startsida, Meny, Evenemang, Om oss och Kontakt, samt lokala navigeringsalternativ under respektive sida (förutom start- och evenemangssidan) som leder till undersidor eller sektioner, såsom Kaffe, Smörgåsar och Godsaker under menyn. Denna kombination av global och lokal navigering gör det möjligt för användaren att snabbt orientera sig, vilket bidrar till en tydlig och användarvänlig informationsarkitektur i linje med Garretts modell.
+            </p>
+            <p><b>Skeleton (skelettplan)</b><br>
+            I skelettplanen, som motsvarar Garretts (2011, s. 108) fjärde plan, handlar arbetet om att förvandla strukturen till en konkret och begriplig layout genom interface-, navigations- och informationsdesign. Garrett (2011, s. 114-116) betonar att ett lyckat gränssnitt hjälper användaren att intuitivt uppmärksamma det viktiga, samtidigt som onödig information döljs eller tas bort. Designen ska lyfta fram de vanligaste användarbehoven och göra dem enkla att utföra snarare än att tillgodose alla tänkbara undantagsfall.</p>
+            <p>I mitt projekt arbetade jag fram layoutprinciper med grid och flexbox och planerade strukturen direkt i koden, vilket fungerade som en form av digital wireframing. Jag bestämde placeringen av rubrik, hero-bild, menylista och evenemangssektion för att skapa en tydlig visuell hierarki och ett enhetligt uttryck. En intern länk till rapporten placerades i sidfoten enligt krav. Beslut om responsivt gridmönster, enkla färger och typsnitt dokumenterades som en del av denna plan.
+            </p>
+            <p><b>Surface (ytplan)</b><br>
+            Garrett (2011, s. 136, 138) beskriver ytplanet, som den nivå där användarupplevelsen får sin slutliga form, där allt tidigare arbete konkretiseras i en design som både tilltalar ögat och stödjer webbplatsens mål. Han betonar att visuella val inte enbart ska styras av estetik, utan av hur väl de stödjer struktur, funktion och strategi.</p>
+            <p>För Café Kaffe & Karma valde jag ett jordnära färgschema (beige, brun och grön) för att förmedla en känsla av värme, hållbarhet och gemenskap. Jag använde ett sans-serif-typsnitt för brödtexten för att skapa god läsbarhet, och ett script-typsnitt för loggan för att ge ett personligt och välkomnande intryck. Bilderna redigerades (vid behov) i Pixlr för att justera storlek, kontrast och filstorlek, och dokumenterades i rapportens bildsektion.</p>
+            <p>Färg- och formvalen stödjer både varumärkets identitet och användarupplevelsen genom att skapa en tydlig visuell hierarki. Garrett (2011, s. 151)  framhåller att färg kan vara ett av de mest effektiva verktygen för att kommunicera en identitet, och genom ett konsekvent färgtema och enhetlig typografi skapades en sammanhållen helhet. För att bibehålla denna enhetlighet användes återkommande designprinciper i alla delar av webbplatsen, vilket fungerar som en enkel form av style guide och säkerställer visuell konsistens även vid framtida uppdateringar.
+            </p>
+            <p><b>Sammanfattningsvis</b> visar utvecklingen av webbplatsen för Café Kaffe & Karma hur Garretts fem plan kan omsättas i praktiskt designarbete – från strategi till visuell utformning. Genom att följa denna struktur kunde jag steg för steg översätta webbplatsens syfte och användarnas behov till en konkret och användarvänlig helhet. Processen tydliggjorde hur besluten på de olika planen påverkar varandra, och Garrett (2011) betonar att en positiv användarupplevelse uppstår när form, funktion och innehåll samverkar mot samma mål.</p>
+        </section>
+        <section>
+            <h2>4. Bilder</h2>
+            <!-- Beskriv i en punktlista vilka redigeringar du gjort av bilderna i ett bildredigeringsprogram, för att anpassa dem till hur du använder dem på din webbplats. -->
+            <p>Bilderna har redigerats i ett bildredigeringsprogram, där följande gjorts:</p>
+            <ul>
+                <li>Hero-bild på startsidan: visar kaféets entre på ett mysigt vis med mycket grönska runtom.
+                Källa: canva.com
+                Redigering: storlek 394 kB i vanlig format, cafe1. Minskad till 800 × 806 px, ljusjusterad och komprimerad till 188 kB - sparad som cafe2. minskad till 500 × 504 px, ljusjusterad och komprimerad till 94 kB - sparad som cafe3. <b>Picture-elementet</b> används på startsidan för hero-bilden.
+                Vid bredare skärmar visas bilden cafe2.jpg, och vid smalare skärmar (max-width: 600px) används cafe3.jpg.
+                Syftet är att optimera laddtid och förbättra designens responsivitet, i enlighet med kursens krav för VG.</li>
+                <li>Loggan som används mellan orden Kaffe och Karma, är en färdig bild från canva, jag har klippt ut konturerna (dvs tagit bort bakgrunden) och målat om färgerna på det som är kvar så att den passar på två olika ställen, dels i header (där den är vit för ökad kontrast mot bakgrund) och dels i footer (där färgen passar fint in med text och bakgrund) </li>
+                <li>Meny-sida: produktbilder av kaffe och bakverk. Källa: se nedan. Redigering: bilderna är utklippta från sin "plats" och storleken är justerad där det behövts.
+                <ol>Kaffe latte: canva.com
+                Espresso: https://bergstrands.se/portfolio/en-perfekt-espresso/  (https://www.compasscoffee.com/blogs/the-daily-grind/coffee-vs-espresso-unraveling-the-caffeine-mystery?srsltid=AfmBOorce1teU-qNUwHEsFlL-bbw8dnG-iiqATdKF6UiajfOnN3_Hk8E). Redigering: se ovan.</ol>
+                <ol>Matcha latte: canva.com
+                Alla tre smörgåsbilderna är skapade i canva.com. Redigering: se ovan.</ol>
+                <ol>Chokladboll: https://graysbakery.se/chokladbollar/chokladboll-2/. Redigering: se ovan.</ol>
+                <ol>Morotskaka: https://www.louisespis.com/2011/06/amerikansk-morotskaka.html 
+                Kanelbulle: canva.com. Redigering: se ovan.</ol>
+                </li>
+                <li>Evenemang-sida: bilderna är från canva.com.
+                Källa: Canva.com
+                Redigering: se ovan.</li>
+                <li>Om oss-sida: personalfoto. Källa: egen bild (fiktiv representation).
+                Redigering: ingen. 
+                Bild: teamet och hållbarhet, skapade i canva.com. Redigering: se ovan.</li>
+            </ul>
+            <!-- För VG anger du också var på din webbplats du använt dig av picture-elementet. Har du använt det på flera ställen, duplicerar du textstycket. -->
+            <!-- Om du inte gjort VG-kravet, tar du bort nedanstående stycke. -->
+            <p>Picture-elementet används på sidan 1 (ett) för bilden på caféet. Tas upp i punkt 1.</p>
+        </section>
+        <section>
+            <h2>5. Utvärdering mot kravspecifikationen</h2>
+            <!-- Kopiera din kravspecifikation hit. Efter varje punkt lägger du till en kort mening som motiverar hur kravet är uppfyllt eller motiverar varför det inte är uppfyllt. -->
+             <table>
+        <caption>Utvärdering mot kravspecifikationen</caption>
+        <tr>
+            <th rowspan="2">Krav</th>
+            <th rowspan="2">Uppfyllt</th>
+            <th rowspan="2">Motivering</th> 
+        </tr>
+        <tr>
+            
+        </tr>
+        <tr>
+            <td>Startsida, meny, evenemang, om oss och kontakt finns</td>
+            <td>✅</td>
+            <td>Samtliga sidor skapade och länkas via global navigering</td>
+        </tr>
+        <tr>
+            <td>Global navigering</td>
+            <td>✅</td>
+            <td>Finns högst upp på alla sidor</td>
+        </tr>
+        <tr>
+            <td>Lokal navigering</td>
+            <td>✅</td>
+            <td>Finns på alla sidor</td>
+        </tr>
+        <tr>
+            <td>Responsiv design (från 350 px och uppåt)</td>
+            <td>✅</td>
+            <td>Testad i Firefox Responsive Design Mode (från 600px och 900px) och fungerar</td>
+        </tr>
+        <tr>
+            <td>Formulär med flera inmatningstyper</td>
+            <td>✅</td>
+            <td>Kontakt/feedback/beställningsformulär med textfält, radio-knapp, e-postfält och meddelandefält</td>
+        </tr>
+        <tr>
+            <td>Bilder redigerade för webben</td>
+            <td>✅</td>
+            <td>Alla bilder beskurna, optimerade och komprimerade vid behov</td>
+        </tr>
+        <tr>
+            <td>Picture-element (VG)</td>
+            <td>✅</td>
+            <td>Använt på startsidan för hero-bilden</td>
+        </tr>
+        <tr>
+            <td>Länk till rapporten på startsidan</td>
+            <td>✅</td>
+            <td>Finns i sidfoten</td>
+        </tr>
+        <tr>
+            <td>CSS i separat fil</td>
+            <td>✅</td>
+            <td>All stil ligger i style.css, rapporten har egen inbäddad CSS</td>
+        </tr>
+         <tr>
+            <td>Fiktivt men relevant innehåll</td>
+            <td>✅</td>
+            <td>Samtliga texter anpassade till ett cafétema och målgruppen</td>
+        </tr>
+     </table>
+        </section>
+        <section>
+            <h2>6. Användartest</h2>
+            <h3>- med metoden "Tänka högt" (Thinking Out Loud)</h3>
+            <!-- Endast för VG. Har du inte utfört användartest, tar du bort detta avsnitt (hela section-elementet). -->
+            <!-- Beskriv hur du genomförde användartestet. Ange vilka brister du upptäckte och hur du åtgärdat dem. -->
+            <p>...</p>
+        </section>
+        <section>
+            <h2>Källförteckning</h2>
+            <!-- Skriv en källförteckning enligt Harvardsystemet för de källor du refererat till i din text. Det ska åtminstone vara Garretts bok. -->
+            <p>Garrett J.J., The Elements of User Experience: User-Centered Design for the Web and Beyond, 2011, Second Edition</p><br>
+            <p>Google: Guntherska, https://guntherska.se/, 2025</p><br>
+            <p>Google: Cafe i Uppsala, https://www.cafepadda.se/om-oss/, 2025</p><br>
+            <p>Google: Espresso House, https://espressohouse.com/food-and-beverages?tab=var-mat, 2025</p>
+        </section>
+    </main>
+</body>
+
+</html>

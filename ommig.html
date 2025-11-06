@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café Kaffe & Karm</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+     <header>
+        <h1>Kaffe <img src="img/loggav.png" alt="loggav" id="loggav"> Karma</h1>
+        <div class="audio-container"> 
+            <audio controls loop>
+        <source src="audio/jazz.mp3" type="audio/mp3">
+        </audio>
+        </div>
+
+    <nav class="top-nav">
+        <div class="nav-container">
+            <ul class="nav-menu">
+                <li class="menu-item"><a href="index.html">Hem</a></li>
+
+                 <li class="menu-item"><a href="meny.html">Meny</a>
+                    <ul class="submenu">
+                        <li><a class="nav-link" href="meny.html#kaffe">Kaffe</a></li>
+                        <li><a class="nav-link" href="meny.html#smörgås">Smörgåsar</a></li>
+                        <li><a class="nav-link" href="meny.html#godsaker">Godsaker</a></li>
+                    </ul>
+                </li>
+
+                <li class="menu-item"><a href="event.html">Evenemang</a>
+                    <ul class="submenu">
+                        <li><a class="nav-link" href="event.html#workshops">Workshops</a></li>
+                        <li><a class="nav-link" href="event.html#openmic">Open Mic</a></li>
+                        <li><a class="nav-link" href="event.html#gemenskap">Konsert</a></li>
+                    </ul>
+                </li>
+
+                <li class="menu-item"><a href="ommig.html">Om oss</a>
+                    <ul class="submenu">
+                        <li><a class="nav-link" href="ommig.html#about-me">Om mig</a></li>
+                        <li><a class="nav-link" href="ommig.html#team">Teamet</a></li>
+                        <li><a class="nav-link" href="ommig.html#hållbarhet">Hållbarhet</a></li>
+                        <li><a class="nav-link" href="ommig.html#feedback">Feedback</a></li>
+                    </ul>
+                </li>
+
+                <li class="menu-item">
+                    <a href="kontakt.html">Kontakt</a>
+                    <ul class="submenu">
+                        <li><a class="nav-link" href="kontakt.html#karta">Karta</a></li>
+                        <li><a class="nav-link" href="kontakt.html#nyhetsbrev">Nyhetsbrev</a></li>
+                    </ul>
+                </li>
+            </ul>
+         </div>
+    </nav>
+</header>
+
+<main class="grid-container">
+        <!-- Om mig -->
+    <div> 
+        <section id="about-me" class="about-me">
+            <h2>Om mig</h2>
+            <p>Jag har tidigare arbetat som ingenjör, men har alltid drömt om att starta något eget. 
+            Kaffe & Karma föddes ur min längtan efter att leva på ett sätt som känns rätt för mig – 
+            där jag får ge vidare något gott, både i smak och i känsla.
+            <br>
+            För mig handlar caféet inte bara om kaffe, utan om att skapa en plats där människor kan
+            stanna upp, andas och känna gemenskap. Jag tror att när vi gör gott, smakar livet bättre.
+            </p>
+            <img src="img/IMG_1712.jpg" alt="Bild på mig, ägare av caféet" class="portrait">
+        </section>
+        
+       
+         <section id="team" class="team">
+            <h2>Våra medhjälpare</h2>
+            <img src="img/team.png" alt="Mina medarbetare i caféet" class="team-photo">
+            <p>
+            Ibland kommer ni få träffa dessa fina medhjälpare i caféet. 
+            Tillsammans skapar vi en varm och välkomnande atmosfär.
+            </p>
+         </section>
+
+         <section id="hållbarhet" class="hållbarhet">
+            <h2>Hållbarhet</h2>
+            <p>Vi tror på att god smak börjar med omtanke – både om människor och planeten. Därför erbjuder vi alltid veganska alternativ och väljer råvaror med omsorg. Vårt kaffe kommer från hållbara odlingar där bönderna får rättvisa villkor och naturen respekteras. På Kaffe & Karma vill vi att varje kopp ska bidra till något gott – för dig, för andra och för jorden.</p>
+            <img src="img/hållbarhet.png" alt="Insidan av caféet" class="portrait">
+        </section>
+
+          <section id="feedback" class="feedback">
+            <h2>Tyck till</h2>
+            <p>Vi vill gärna höra dina tankar och idéer! Vad vill du se mer av på Café Kaffe & Karma!</p>
+            <form class="feedback-form">
+                <label for="name">Namn:</label>
+                <input type="text" id="name" name="name" required><br>
+
+                <label for="meddelande">Meddelande:</label>
+                <textarea id="meddelande" name="meddelande" rows="5" placeholder="Skriv ditt meddelande här..."></textarea>
+
+                <button type="submit">Skicka</button>
+            </form>
+          </section>
+    </div>
+</main>
+    
+
+<footer class="site-footer">
+        <div class="footer-inner">
+            <div class="footer-columns">
+                <div class="footer-col">
+                    <h4>Kontakt</h4>
+                    <p>Kaffe & Karma<br>
+                    Fjärdingen<br>
+                    753 24 Uppsala<br>
+                    <a href="ommig.html" class="about-btn">Kontakt</a></p>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Öppettider</h4>
+                    <p>Måndag-Fredag: 08-18<br>
+                    Lördag-Söndag: 10-16<br>
+                    <a href="event.html" class="event-btn">Avvikande öppettider</a></p>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Följ oss</h4>
+                    <ul class="social">
+                        <li><a href="https://www.instagram.com"><i class="fab fa-instagram"></i> Instagram</a></li>
+                        <li><a href="https://www.facebook.com"><i class="fab fa-facebook"></i> Facebook</a></li>
+                        <li><a href="https://www.tiktok.com"><i class="fab fa-tiktok"></i> TikTok</a></li>
+                    </ul>
+                    </div>
+            </div>
+                <div class="footer-bottom">
+                    <p>© 2025 Kaffe <img src="img/logga.png" alt="logga" id="logga"> Karma</p>
+                </div>
+            
+        </div>
+    </footer>
+
+    </body>
+</html>

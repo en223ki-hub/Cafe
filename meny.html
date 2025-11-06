@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafe Karma</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body class="menu">
+     <header>
+        <h1>Kaffe <img src="img/loggav.png" alt="loggav" id="loggav"> Karma</h1>
+        <div class="audio-container"> 
+            <audio controls loop>
+        <source src="audio/jazz.mp3" type="audio/mp3">
+        </audio>
+        </div>
+
+    <nav class="top-nav">
+        <div class="nav-container">
+            <ul class="nav-menu">
+                <li class="menu-item"><a href="index.html">Hem</a></li>
+
+                 <li class="menu-item"><a href="meny.html">Meny</a>
+                    <ul class="submenu">
+                        <li><a class="nav-link" href="meny.html#kaffe">Kaffe</a></li>
+                        <li><a class="nav-link" href="meny.html#smörgås">Smörgåsar</a></li>
+                        <li><a class="nav-link" href="meny.html#godsaker">Godsaker</a></li>
+                    </ul>
+                </li>
+
+                <li class="menu-item"><a href="event.html">Evenemang</a>
+                    <ul class="submenu">
+                        <li><a class="nav-link" href="event.html#workshops">Workshops</a></li>
+                        <li><a class="nav-link" href="event.html#openmic">Open Mic</a></li>
+                        <li><a class="nav-link" href="event.html#gemenskap">Konsert</a></li>
+                    </ul>
+                </li>
+
+                <li class="menu-item"><a href="ommig.html">Om oss</a>
+                    <ul class="submenu">
+                        <li><a class="nav-link" href="ommig.html#about-me">Om mig</a></li>
+                        <li><a class="nav-link" href="ommig.html#team">Teamet</a></li>
+                        <li><a class="nav-link" href="ommig.html#hållbarhet">Hållbarhet</a></li>
+                        <li><a class="nav-link" href="ommig.html#feedback">Feedback</a></li>
+                    </ul>
+                </li>
+
+                <li class="menu-item">
+                    <a href="kontakt.html">Kontakt</a>
+                    <ul class="submenu">
+                        <li><a class="nav-link" href="kontakt.html#karta">Karta</a></li>
+                        <li><a class="nav-link" href="kontakt.html#nyhetsbrev">Nyhetsbrev</a></li>
+                    </ul>
+                </li>
+            </ul>
+         </div>
+    </nav>
+</header>
+
+<main class="meny-main">
+  <section id="meny">
+  <div class="meny-avsnitt" id="kaffe">
+    <h2>Varma drycker</h2>
+    <div class="meny-grid">
+      <div class="meny-item">
+        <h3>Kaffe Latte</h3>
+        <img src="img/latte.png" alt="Kaffe latte">
+      </div>
+      <div class="meny-item">
+        <h3>Cappuccino</h3>
+        <img src="img/cappuccino.avif" alt="Cappuccino">
+      </div>
+      <div class="meny-item">
+        <h3>Matcha latte</h3>
+        <img src="img/matcha.png" alt="Matcha latte">
+      </div>
+    </div>
+  </div>
+
+  <div class="meny-avsnitt" id="smörgås">
+    <h2>Smörgåsar</h2>
+    <div class="meny-grid">
+      <div class="meny-item">
+        <h3>Halloumismörgås</h3>
+        <img src="img/halloumi.png" alt="Halloumismörgås">
+      </div>
+      <div class="meny-item">
+        <h3>Beyond Meat smörgås</h3>
+        <img src="img/vegkött.png" alt="Beyond Meat smörgås">
+      </div>
+      <div class="meny-item">
+        <h3>Avokadosmörgås</h3>
+        <img src="img/avocado.png" alt="Avokadosmörgås">
+      </div>
+    </div>
+  </div>
+
+  <div class="meny-avsnitt" id="godsaker">
+    <h2>Godsaker</h2>
+    <div class="meny-grid">
+      <div class="meny-item">
+        <h3>Chokladboll</h3>
+        <img src="img/chokladboll.webp" alt="Chokladboll">
+      </div>
+      <div class="meny-item">
+        <h3>Morotskaka</h3>
+        <img src="img/morotstårta.JPG" alt="Morotskaka">
+      </div>
+      <div class="meny-item">
+        <h3>Kanelbulle</h3>
+        <img src="img/kanelbulle.png" alt="Kanelbulle">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="beställningsformulär">
+    <h3>Café Kaffe & Karma</h3>
+    <p>Välkommen att fylla i formuläret för att skicka din beställning.<br><br>
+    Vänligen observera att du behöver beställa minst 2 timmar innan besök till caféet.</p>
+    
+    <form id="order" name="order" method="POST" data-netlify="true">
+    <input type="hidden" name="form-name" value="order">
+
+        <fieldset id="fika1">
+            <legend>Val av dryck</legend>
+            <label for="latte">Kaffe Latte</label>
+                <select id="latte" name="number">
+                    <option value="0">-</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                </select><br>
+            <label for="cappuccino">Cappuccino</label>
+                <select id="cappuccino" name="number">
+                    <option value="0">-</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                </select><br>
+            <label for="matcha">Matcha latte
+            </label>
+            <select id="matcha" name="number">
+                    <option value="0">-</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                </select>
+        </fieldset>
+
+        <fieldset id="fika2">
+            <legend>Val av Smörgås</legend>
+            <label for="halloumi">Halloumismörgås</label>
+                <select id="halloumi" name="number">
+                    <option value="0">-</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                </select><br>
+            <label for="beyondmeat">Beyond Meat-smörgås</label>
+                <select id="beyondmeat" name="number">
+                    <option value="0">-</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                </select><br>
+            <label for="avocado">Avokadosmörgås</label>
+                <select id="avocado" name="number">
+                    <option value="0">-</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                </select>
+        </fieldset>
+
+        <fieldset id="fika3">
+            <legend>Val av godsaker</legend>
+            <label for="chokladboll">Chokladboll</label>
+                <select id="chokladboll" name="number">
+                    <option value="0">-</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                </select><br>
+            <label for="morotskaka">Morotskaka</label>
+                <select id="morotskaka" name="number">
+                    <option value="0">-</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                </select><br>
+            <label for="kanelbulle">Kanelbulle</label>
+                <select id="kanelbulle" name="number">
+                    <option value="0">-</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                </select>
+        </fieldset>
+
+        <fieldset id="date">
+            <legend>Datum</legend>
+            <label><input type="date" name="arrival" required></label>
+        </fieldset>
+
+        <fieldset id="servering">
+            <legend>Servering</legend>
+            <label><input type="radio" name="servering" value="plats"> Äta på plats</label>
+            <label><input type="radio" name="servering" value="takeaway"> Ta med</label>
+        </fieldset>
+
+        <fieldset id="customer">
+            <legend>Kunduppgifter</legend>
+            <label for="name">Namn*</label>
+            <input type="text" name="name" id="name" required><br>
+            <label for="phone">Telefonnummer*</label>
+            <input type="tel" name="phonenumber" id="phone" required><br>
+            <label for="email">E-post*</label>
+            <input type="email" name="email" id="email" required>
+        </fieldset>
+        <button type="submit">Submit</button>
+    </form>
+
+</section>
+
+</main>
+
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <div class="footer-columns">
+                <div class="footer-col">
+                    <h4>Kontakt</h4>
+                    <p>Kaffe & Karma<br>
+                    Fjärdingen<br>
+                    753 24 Uppsala<br>
+                    <a href="ommig.html" class="about-btn">Kontakt</a></p>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Öppettider</h4>
+                    <p>Måndag-Fredag: 08-18<br>
+                    Lördag-Söndag: 10-16<br>
+                    <a href="event.html" class="event-btn">Avvikande öppettider</a></p>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Följ oss</h4>
+                        <ul class="social">
+                            <li><a href="https://www.instagram.com"><i class="fab fa-instagram"></i> Instagram</a></li>
+                            <li><a href="https://www.facebook.com"><i class="fab fa-facebook"></i> Facebook</a></li>
+                            <li><a href="https://www.tiktok.com"><i class="fab fa-tiktok"></i> TikTok</a></li>
+                        </ul>
+                        </div>
+            </div>
+                <div class="footer-bottom">
+                    <p>© 2025 Kaffe <img src="img/logga.png" alt="logga" id="logga"> Karma</p>
+                </div>
+            
+        </div>
+    </footer>
+
+</body>
+</html>
